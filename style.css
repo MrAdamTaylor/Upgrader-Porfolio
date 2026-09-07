@@ -409,6 +409,32 @@ footer .social a:hover {
 .modal-body li {
     margin-bottom: 10px;
 }
+/* Фиксируем canvas как фон */
+#bg-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;           /* поверх body, но под контентом */
+    pointer-events: none; /* чтобы не перехватывал клики */
+}
+
+/* Поднимаем контент над canvas */
+main, footer {
+    position: relative;
+    z-index: 1;
+}
+
+.header-text
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 16px 24px;
+}
+
 
 /* Адаптив */
 @media (max-width: 992px) {
