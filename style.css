@@ -21,7 +21,9 @@ section {
     padding: 80px 0;
 }
 
-/* Хедер */
+/* ============================================================ */
+/* 1) ШАПКА                                                     */
+/* ============================================================ */
 #main-header {
     position: fixed;
     top: 0;
@@ -31,23 +33,69 @@ section {
     box-shadow: 0 2px 15px rgba(0,0,0,0.05);
     z-index: 1000;
 }
+
 .header-container {
     display: flex;
-    justify-content: center;
-    padding: 16px 24px;
-}
-.logo {
-    font-size: 1.6rem;
-    font-weight: 800;
-    color: #0a2540;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 24px;
+    gap: 24px;
 }
 
-/* Отступ для компенсации фиксированного хедера */
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 44px;
+    width: auto;
+    display: block;
+}
+
+.main-menu {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #0a2540;
+    font-weight: 500;
+    font-size: 1rem;
+    position: relative;
+    transition: color 0.2s;
+}
+
+.main-menu a:hover {
+    color: #eab308;
+}
+
+.main-menu a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: #eab308;
+    transition: width 0.3s;
+}
+
+.main-menu a:hover::after {
+    width: 100%;
+}
+
+/* Отступ для фиксированного хедера */
 main {
     margin-top: 80px;
 }
 
-/* Hero */
+/* ============================================================ */
+/* 2) ГЛАВНОЕ (HERO)                                            */
+/* ============================================================ */
 .hero-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -55,25 +103,30 @@ main {
     gap: 48px;
     min-height: 70vh;
 }
+
 .hero-content h1 {
     font-size: 3.2rem;
     font-weight: 800;
     line-height: 1.2;
     margin-bottom: 24px;
 }
+
 .hero-content h1 span {
     color: #eab308;
 }
+
 .hero-content p {
     font-size: 1.2rem;
     color: #334155;
     margin-bottom: 32px;
 }
+
 .btn-group {
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
 }
+
 .btn {
     display: inline-block;
     padding: 12px 28px;
@@ -81,41 +134,54 @@ main {
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    font-family: inherit;
 }
+
 .btn-primary {
     background: #0a2540;
     color: white;
     border: 2px solid #0a2540;
 }
+
 .btn-primary:hover {
     background: #051a2c;
     transform: translateY(-3px);
 }
+
 .btn-secondary {
     background: transparent;
     border: 2px solid #0a2540;
     color: #0a2540;
 }
+
 .btn-secondary:hover {
     background: #0a2540;
     color: white;
 }
+
 .hero-image {
     text-align: center;
     font-size: 12rem;
     color: rgba(10,37,64,0.08);
 }
 
-/* Общие заголовки */
+/* ============================================================ */
+/* ОБЩИЕ ЗАГОЛОВКИ                                              */
+/* ============================================================ */
 .section-header {
     text-align: center;
     margin-bottom: 48px;
 }
+
 .section-header h2 {
     font-size: 2.2rem;
     font-weight: 700;
     color: #0a2540;
 }
+
 .divider {
     width: 80px;
     height: 4px;
@@ -123,37 +189,50 @@ main {
     margin: 16px auto 24px;
     border-radius: 4px;
 }
+
 .section-header p {
     color: #334155;
     max-width: 600px;
     margin: 0 auto;
 }
 
-/* About */
+/* ============================================================ */
+/* 3) О СЕБЕ / ОПЫТ                                             */
+/* ============================================================ */
+.about-section {
+    background: #ffffff;
+}
+
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 48px;
     align-items: center;
 }
+
 .about-text p {
     margin-bottom: 20px;
 }
+
 .about-stats {
     display: flex;
     gap: 32px;
     margin-top: 24px;
+    flex-wrap: wrap;
 }
+
 .stat {
     font-weight: 600;
     color: #334155;
 }
+
 .stat span {
     font-size: 1.8rem;
     font-weight: 800;
     color: #eab308;
     display: block;
 }
+
 .about-image {
     text-align: center;
     font-size: 12rem;
@@ -165,6 +244,7 @@ main {
     max-width: 1000px;
     margin: 0 auto;
 }
+
 .skills-card {
     background: white;
     border-radius: 32px;
@@ -173,65 +253,79 @@ main {
     grid-template-columns: 1fr 1.8fr;
     overflow: hidden;
 }
+
 .skills-left {
     background: #0a2540;
     color: white;
     padding: 40px 28px;
     text-align: center;
 }
+
 .avatar-icon {
     font-size: 5rem;
     margin-bottom: 20px;
 }
+
 .skills-left h3 {
     font-size: 1.8rem;
     margin-bottom: 8px;
 }
+
 .role {
     font-weight: 500;
     opacity: 0.85;
     margin-bottom: 20px;
 }
+
 .bio {
     font-size: 0.95rem;
 }
+
 .skills-right {
     padding: 32px;
 }
+
 .skills-header h4 {
     font-size: 1.4rem;
     color: #0a2540;
     margin-bottom: 6px;
 }
+
 .skills-sub {
     font-size: 0.85rem;
     color: #334155;
     margin-bottom: 28px;
 }
+
 .skill-item {
     margin-bottom: 24px;
     cursor: pointer;
 }
+
 .skill-item:hover {
     transform: translateX(6px);
     transition: 0.2s;
 }
+
 .skill-info {
     display: flex;
     justify-content: space-between;
     margin-bottom: 6px;
     font-weight: 500;
 }
+
 .skill-percent {
     color: #eab308;
     font-weight: 700;
 }
+
 .skill-bar-bg {
     background: #e2e8f0;
     border-radius: 12px;
     height: 8px;
     overflow: hidden;
 }
+
 .skill-bar-fill {
     background: #eab308;
     height: 100%;
@@ -240,89 +334,254 @@ main {
 
 /* История */
 .history-container {
-    background: white;
+    background: #f8fafc;
     border-radius: 32px;
     padding: 24px 32px;
     box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
 }
+
 .history-item {
     padding: 20px 0;
     border-bottom: 1px solid #e2e8f0;
 }
+
 .history-item:last-child {
     border: none;
 }
+
 .history-item h3 {
     color: #0a2540;
     margin-bottom: 12px;
 }
+
 .history-item h3 i {
     color: #eab308;
     margin-right: 12px;
 }
 
-/* Кейсы */
+/* ============================================================ */
+/* 4) УСЛУГИ И ЦЕНЫ                                             */
+/* ============================================================ */
+.services-section {
+    background: #eef2f7;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
+}
+
+.service-card {
+    background: #ffffff;
+    border-radius: 28px;
+    padding: 36px 28px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    border-color: #eab308;
+    box-shadow: 0 20px 35px -10px rgba(10,37,64,0.15);
+}
+
+.service-card--featured {
+    border-color: #eab308;
+    box-shadow: 0 15px 30px -10px rgba(234,179,8,0.25);
+}
+
+.service-icon {
+    font-size: 2.6rem;
+    color: #eab308;
+    margin-bottom: 6px;
+}
+
+.service-card h3 {
+    font-size: 1.25rem;
+    color: #0a2540;
+}
+
+.service-card p {
+    color: #334155;
+    font-size: 0.95rem;
+    flex-grow: 1;
+}
+
+.service-card .price {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #0a2540;
+    margin: 6px 0 12px;
+}
+
+/* ============================================================ */
+/* 5) КЕЙСЫ И ОТЗЫВЫ                                            */
+/* ============================================================ */
+.cases-section {
+    background: #ffffff;
+}
+
 .cases-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 32px;
 }
+
 .case-card {
-    background: white;
+    background: #ffffff;
     border-radius: 28px;
     padding: 32px 24px;
     text-align: center;
     transition: 0.3s;
     border: 1px solid #e2e8f0;
 }
+
 .case-card:hover {
     transform: translateY(-8px);
     border-color: #eab308;
 }
+
 .case-card i {
     font-size: 2.8rem;
     color: #eab308;
     margin-bottom: 20px;
 }
+
 .case-card h3 {
     font-size: 1.3rem;
     margin-bottom: 12px;
     color: #0a2540;
 }
 
-/* Контакты */
-.contact-wrapper {
+.reviews-grid {
     display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 48px;
-    background: white;
-    border-radius: 32px;
-    padding: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 28px;
 }
-.contact-item {
+
+.review-card {
+    background: #f8fafc;
+    border-radius: 28px;
+    padding: 32px 28px;
+    border-left: 4px solid #eab308;
+    transition: 0.3s;
+}
+
+.review-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px -10px rgba(10,37,64,0.1);
+}
+
+.review-card i {
+    color: #eab308;
+    font-size: 1.4rem;
+    margin-bottom: 14px;
+    display: block;
+}
+
+.review-card p {
+    color: #334155;
+    font-style: italic;
+    margin-bottom: 16px;
+}
+
+.review-card .author {
+    font-weight: 600;
+    color: #0a2540;
+}
+
+/* ============================================================ */
+/* 6) ПОДВАЛ / КОНТАКТЫ                                         */
+/* ============================================================ */
+.footer {
+    background: #051a2c;
+    color: #cbd5e1;
+    padding: 60px 0 24px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 0.8fr;
+    gap: 48px;
+    margin-bottom: 40px;
+}
+
+.footer-col h3 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.footer-col .contact-item {
     display: flex;
     align-items: center;
-    gap: 16px;
-    margin-bottom: 28px;
+    gap: 14px;
+    margin-bottom: 18px;
+    color: #cbd5e1;
 }
-.contact-item i {
+
+.footer-col .contact-item i {
     width: 40px;
     height: 40px;
-    background: #e2e8f0;
+    background: rgba(255,255,255,0.08);
     border-radius: 50%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: #0a2540;
+    color: #eab308;
+    flex-shrink: 0;
 }
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px 18px;
+    margin-bottom: 14px;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 20px;
+    font-family: inherit;
+    background: rgba(255,255,255,0.06);
+    color: #ffffff;
+    font-size: 0.95rem;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #94a3b8;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #eab308;
+}
+
+.contact-form button {
+    width: 100%;
+    background: #eab308;
+    color: #0a2540;
+    border-color: #eab308;
+}
+
+.contact-form button:hover {
+    background: #ca9a06;
+    border-color: #ca9a06;
+    color: #ffffff;
+}
+
 .social-links {
     display: flex;
-    gap: 18px;
-    margin-top: 30px;
+    gap: 14px;
 }
+
 .social-links a {
-    background: #0a2540;
-    color: white;
+    background: rgba(255,255,255,0.08);
+    color: #ffffff;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -330,40 +589,25 @@ main {
     align-items: center;
     justify-content: center;
     transition: 0.3s;
+    text-decoration: none;
 }
+
 .social-links a:hover {
     background: #eab308;
-}
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 14px 18px;
-    margin-bottom: 20px;
-    border: 1px solid #e2e8f0;
-    border-radius: 28px;
-    font-family: inherit;
-}
-.contact-form button {
-    width: 100%;
+    color: #0a2540;
 }
 
-/* Футер */
-footer {
-    background: #051a2c;
-    color: #ccc;
-    padding: 32px 0;
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 20px;
     text-align: center;
-    margin-top: 40px;
-}
-footer .social a {
-    color: white;
-    margin: 0 12px;
-    font-size: 1.2rem;
-}
-footer .social a:hover {
-    color: #eab308;
+    font-size: 0.9rem;
+    color: #94a3b8;
 }
 
-/* Модальное окно */
+/* ============================================================ */
+/* МОДАЛЬНОЕ ОКНО                                               */
+/* ============================================================ */
 .modal {
     display: none;
     position: fixed;
@@ -377,6 +621,7 @@ footer .social a:hover {
     justify-content: center;
     align-items: center;
 }
+
 .modal-content {
     background: white;
     border-radius: 32px;
@@ -384,6 +629,7 @@ footer .social a:hover {
     width: 90%;
     padding: 28px 32px;
 }
+
 .modal-header {
     display: flex;
     justify-content: space-between;
@@ -392,23 +638,29 @@ footer .social a:hover {
     padding-bottom: 16px;
     margin-bottom: 20px;
 }
+
 .modal-header h3 {
     color: #0a2540;
 }
+
 .close-modal {
     font-size: 2rem;
     cursor: pointer;
 }
+
 .close-modal:hover {
     color: #eab308;
 }
+
 .modal-body ul {
     margin-left: 24px;
     margin-top: 12px;
 }
+
 .modal-body li {
     margin-bottom: 10px;
 }
+
 /* Фиксируем canvas как фон */
 #bg-canvas {
     position: fixed;
@@ -416,8 +668,8 @@ footer .social a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 0;           /* поверх body, но под контентом */
-    pointer-events: none; /* чтобы не перехватывал клики */
+    z-index: 0;
+    pointer-events: none;
 }
 
 /* Поднимаем контент над canvas */
@@ -426,33 +678,72 @@ main, footer {
     z-index: 1;
 }
 
-.header-text
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
-    padding: 16px 24px;
-}
-
-
-/* Адаптив */
+/* ============================================================ */
+/* АДАПТИВ                                                      */
+/* ============================================================ */
 @media (max-width: 992px) {
-    .hero-grid, .about-grid, .skills-card, .contact-wrapper {
+    .hero-grid,
+    .about-grid,
+    .skills-card {
         grid-template-columns: 1fr;
     }
-    .hero-image, .about-image {
+
+    .hero-image,
+    .about-image {
         display: none;
     }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
 }
+
 @media (max-width: 768px) {
+    section {
+        padding: 56px 0;
+    }
+
+    .header-container {
+        padding: 12px 20px;
+        gap: 12px;
+    }
+
+    .logo-img {
+        height: 34px;
+    }
+
+    .main-menu {
+        gap: 14px;
+    }
+
+    .main-menu a {
+        font-size: 0.85rem;
+    }
+
     .hero-content h1 {
         font-size: 2.2rem;
     }
+
     .section-header h2 {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
-    .contact-wrapper {
-        padding: 24px;
+
+    .about-stats {
+        gap: 20px;
+    }
+
+    .stat span {
+        font-size: 1.5rem;
+    }
+
+    .skills-right {
+        padding: 24px 20px;
+    }
+
+    .services-grid,
+    .cases-grid,
+    .reviews-grid {
+        gap: 20px;
     }
 }

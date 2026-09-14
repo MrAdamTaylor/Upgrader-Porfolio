@@ -12,38 +12,61 @@
 
 <canvas id="bg-canvas"></canvas>
 
+<!-- ============================================================ -->
+<!-- 1) ШАПКА: Логотип + Меню                                     -->
+<!-- ============================================================ -->
 <header id="main-header">
     <div class="container header-container">
-        <div class="header-text">
-            <div class="logo">Илья Стальмаков</div>
-            <div class="tagline">"Эксперт и профессионал в области обучения программированию на C#/Unity"</div>
-        </div>
+
+        <!-- Логотип слева -->
+        <a href="#main" class="logo-link">
+            <img src="src/logo.png" alt="Илья Стальмаков" class="logo-img">
+        </a>
+
+        <!-- Меню справа -->
+        <nav class="main-menu">
+            <a href="#main">Главное</a>
+            <a href="#services">Услуги</a>
+            <a href="#cases">Кейсы</a>
+            <a href="#about">О себе</a>
+        </nav>
     </div>
 </header>
 
 <main>
-    <section id="hero">
+
+    <!-- ============================================================ -->
+    <!-- 2) ИНФОРМАЦИЯ ОБО МНЕ (Картинка + текст)                     -->
+    <!-- ============================================================ -->
+    <section id="main" class="hero-section">
         <div class="container hero-grid">
             <div class="hero-content">
-                <h1>Обучаю <span>разработке игр на Unity</span>, а также <span>программировани</span></h1>
+                <h1>Обучаю <span>разработке игр на Unity</span>, а также <span>программированию</span></h1>
                 <p>Илья Стальмаков — Преподаватель с 5-ти летним опытом и коммерческий разработчик</p>
                 <div class="btn-group">
-                    <a href="#contact" class="btn btn-primary">Записаться на консультацию</a>
-                    <a href="#skills" class="btn btn-secondary">Коротко о компетенциях</a>
+                    <a href="#contacts" class="btn btn-primary">Записаться на консультацию</a>
+                    <a href="#about" class="btn btn-secondary">Коротко о компетенциях</a>
                 </div>
             </div>
             <div class="hero-image">
+                <!-- Здесь в будущем будет твоя фотография -->
                 <i class="fas fa-chalkboard-teacher"></i>
             </div>
         </div>
     </section>
 
-    <section id="about">
+    <!-- ============================================================ -->
+    <!-- 3) ИНФОРМАЦИЯ О КОМПАНИИ (Опыт / История)                    -->
+    <!-- ============================================================ -->
+    <section id="about" class="about-section">
         <div class="container">
+
+            <!-- О преподавателе -->
             <div class="section-header">
                 <h2>О преподавателе</h2>
                 <div class="divider"></div>
             </div>
+
             <div class="about-grid">
                 <div class="about-text">
                     <p>Привет! Меня зовут Илья Стальмаков. Я прошел путь от младшего аналитика до директора по стратегическому развитию в крупной IT-компании. За плечами — запуск 7 коммерческих продуктов с общим оборотом более 500 млн ₽, обучение 300+ специалистов, которые теперь работают в топовых российских и международных компаниях.</p>
@@ -55,19 +78,18 @@
                     </div>
                 </div>
                 <div class="about-image">
+                    <!-- Здесь в будущем будет твоя фотография -->
                     <i class="fas fa-user-tie"></i>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="skills">
-        <div class="container">
-            <div class="section-header">
+            <!-- Ключевые компетенции -->
+            <div class="section-header" style="margin-top: 80px;">
                 <h2>Ключевые компетенции</h2>
                 <div class="divider"></div>
                 <p>Нажмите на любой навык, чтобы увидеть реальные задачи и проекты</p>
             </div>
+
             <div class="skills-container">
                 <div class="skills-card">
                     <div class="skills-left">
@@ -108,55 +130,158 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="history">
-        <div class="container">
-            <div class="section-header">
+            <!-- История успеха / Опыт -->
+            <div class="section-header" style="margin-top: 80px;">
                 <h2>История успеха</h2>
                 <div class="divider"></div>
             </div>
+
             <div class="history-container">
                 <div class="history-item"><h3><i class="fas fa-graduation-cap"></i> 2010–2014: Становление</h3><p>Начало карьеры в инвестиционном банке. За 4 года прошёл путь от стажёра до ведущего аналитика. Участвовал в сделках M&A на сумму более $50 млн.</p></div>
                 <div class="history-item"><h3><i class="fas fa-chart-line"></i> 2015–2017: Первые проекты</h3><p>Создал с нуля систему бюджетирования и управленческой отчётности. Запустил внутреннюю школу аналитики.</p></div>
                 <div class="history-item"><h3><i class="fas fa-chalkboard"></i> 2018–2020: Наставничество</h3><p>Разработал методику «Коммерческий экспресс», которая помогла 150+ менеджерам повысить KPI.</p></div>
                 <div class="history-item"><h3><i class="fas fa-award"></i> 2021–н.в.: Признание</h3><p>Лучший бизнес-тренер года. Ученики работают в X5 Group, Яндекс, Сбер. Открыл онлайн-академию.</p></div>
             </div>
+
         </div>
     </section>
 
-    <section id="cases">
+    <!-- ============================================================ -->
+    <!-- 4) УСЛУГИ И ЦЕНЫ                                             -->
+    <!-- ============================================================ -->
+    <section id="services" class="services-section">
         <div class="container">
-            <div class="section-header"><h2>Кейсы учеников</h2><div class="divider"></div><p>Реальные проекты после обучения</p></div>
+            <div class="section-header">
+                <h2>Услуги и цены</h2>
+                <div class="divider"></div>
+                <p>Выберите подходящий формат обучения или сотрудничества</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-user-graduate"></i></div>
+                    <h3>Индивидуальное занятие</h3>
+                    <p>Персональный урок по C# / Unity. Разбираем ваши задачи и проекты в удобном темпе.</p>
+                    <div class="price">3 000 ₽ / час</div>
+                    <a href="#contacts" class="btn btn-secondary">Записаться</a>
+                </div>
+
+                <div class="service-card service-card--featured">
+                    <div class="service-icon"><i class="fas fa-gamepad"></i></div>
+                    <h3>Курс «Unity с нуля»</h3>
+                    <p>Полный курс из 20 занятий: от основ C# до публикации собственной игры.</p>
+                    <div class="price">45 000 ₽ / курс</div>
+                    <a href="#contacts" class="btn btn-primary">Записаться</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-comments"></i></div>
+                    <h3>Консультация по проекту</h3>
+                    <p>Разбор вашего проекта, код-ревью, помощь с архитектурой и оптимизацией.</p>
+                    <div class="price">5 000 ₽ / сессия</div>
+                    <a href="#contacts" class="btn btn-secondary">Записаться</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>Коммерческая разработка</h3>
+                    <p>Разработка игр и приложений на Unity под ключ — от прототипа до релиза.</p>
+                    <div class="price">от 100 000 ₽</div>
+                    <a href="#contacts" class="btn btn-secondary">Обсудить</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 5) КЕЙСЫ И ОТЗЫВЫ                                            -->
+    <!-- ============================================================ -->
+    <section id="cases" class="cases-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Кейсы учеников</h2>
+                <div class="divider"></div>
+                <p>Реальные проекты после обучения</p>
+            </div>
+
             <div class="cases-grid">
                 <div class="case-card"><i class="fas fa-chart-simple"></i><h3>Увеличение прибыли на 40%</h3><p>Внедрение юнит-экономики в сети кофеен.</p></div>
                 <div class="case-card"><i class="fas fa-file-signature"></i><h3>Тендер на 120 млн ₽</h3><p>Техники коммерческих переговоров.</p></div>
                 <div class="case-card"><i class="fas fa-rocket"></i><h3>Запуск стартапа</h3><p>Привлёк инвестиции, окупаемость за 8 месяцев.</p></div>
             </div>
-        </div>
-    </section>
 
-    <section id="contact">
-        <div class="container">
-            <div class="section-header"><h2>Свяжитесь со мной</h2><div class="divider"></div><p>Начните карьеру в коммерции уже сегодня</p></div>
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <div class="contact-item"><i class="fas fa-envelope"></i> info@stalnakov.ru</div>
-                    <div class="contact-item"><i class="fab fa-telegram"></i> @stalnakov_business</div>
-                    <div class="contact-item"><i class="fab fa-youtube"></i> /c/StalnakovSkills</div>
-                    <div class="social-links"><a href="#"><i class="fab fa-vk"></i></a><a href="#"><i class="fab fa-telegram"></i></a><a href="#"><i class="fab fa-linkedin"></i></a></div>
+            <!-- Отзывы -->
+            <div class="section-header" style="margin-top: 80px;">
+                <h2>Отзывы</h2>
+                <div class="divider"></div>
+                <p>Что говорят ученики</p>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <i class="fas fa-quote-left"></i>
+                    <p>«За 3 месяца прошёл путь от нуля до собственного прототипа на Unity. Илья объясняет сложные вещи простым языком.»</p>
+                    <div class="author">— Алексей, инди-разработчик</div>
                 </div>
-                <form class="contact-form"><input type="text" placeholder="Ваше имя" required><input type="email" placeholder="Email" required><textarea rows="4" placeholder="Сообщение"></textarea><button type="submit" class="btn btn-primary">Отправить</button></form>
+                <div class="review-card">
+                    <i class="fas fa-quote-left"></i>
+                    <p>«Отличный наставник. Помог структурировать знания и поверить в свои силы. Уже работаю в игровой студии.»</p>
+                    <div class="author">— Мария, junior C# разработчик</div>
+                </div>
+                <div class="review-card">
+                    <i class="fas fa-quote-left"></i>
+                    <p>«Практика с первого занятия. Никакой воды — только код, кейсы и разбор ошибок. Рекомендую!»</p>
+                    <div class="author">— Дмитрий, студент</div>
+                </div>
             </div>
         </div>
     </section>
+
 </main>
 
-<footer>
-    <div class="container"><p>&copy; 2025 Илья Стальмаков. Все права защищены.</p><div class="social"><a href="#"><i class="fab fa-vk"></i></a><a href="#"><i class="fab fa-telegram"></i></a><a href="#"><i class="fab fa-linkedin"></i></a></div></div>
+<!-- ============================================================ -->
+<!-- 6) КОНТАКТНАЯ ИНФОРМАЦИЯ (ПОДВАЛ)                            -->
+<!-- ============================================================ -->
+<footer id="contacts" class="footer">
+    <div class="container">
+        <div class="footer-grid">
+
+            <div class="footer-col">
+                <h3>Свяжитесь со мной</h3>
+                <div class="contact-item"><i class="fas fa-envelope"></i> info@stalnakov.ru</div>
+                <div class="contact-item"><i class="fab fa-telegram"></i> @stalnakov_business</div>
+                <div class="contact-item"><i class="fab fa-youtube"></i> /c/StalnakovSkills</div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Напишите мне</h3>
+                <form class="contact-form">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea rows="3" placeholder="Сообщение"></textarea>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+            </div>
+
+            <div class="footer-col">
+                <h3>Соцсети</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Илья Стальмаков. Все права защищены.</p>
+        </div>
+    </div>
 </footer>
 
+<!-- Модальное окно для навыков -->
 <div id="taskModal" class="modal"><div class="modal-content"><div class="modal-header"><h3>Проекты и задачи по навыку</h3><span class="close-modal">&times;</span></div><div class="modal-body"><p><strong>Навык:</strong> <span id="modalSkillName"></span></p><p><strong>Результаты / выполненные задачи:</strong></p><ul id="modalTaskList"></ul></div></div></div>
 
 <script src="script.js"></script>
