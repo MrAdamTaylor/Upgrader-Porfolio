@@ -26,9 +26,12 @@
         <!-- Меню справа -->
         <nav class="main-menu">
             <a href="#main">Главное</a>
+            <a href="#about">О себе</a>
+            <a href="#experience">Опыт</a>
+            <a href="#skills">Навыки</a>
             <a href="#services">Услуги</a>
             <a href="#cases">Кейсы</a>
-            <a href="#about">О себе</a>
+            <a href="#contacts">Контакты</a>
         </nav>
     </div>
 </header>
@@ -36,57 +39,110 @@
 <main>
 
     <!-- ============================================================ -->
-    <!-- 2) ИНФОРМАЦИЯ ОБО МНЕ (Картинка + текст)                     -->
+    <!-- 2) ГЛАВНОЕ (HERO)                                            -->
     <!-- ============================================================ -->
     <section id="main" class="hero-section">
         <div class="container hero-grid">
             <div class="hero-content">
-                <h1>Помогаю освоить <span>программирование</span></h1>
-                <p>Освоение учебных программы по языкам программирования C#/C++</p>
-                <p>Разработка компьютерных игр на Unity для начинающих</p>
-                <p>Повышение квалификации для Unity разработчиков </p>
-                <p>Методы анализа данных, обработка входных данных и вероятностное программирование для ML</p>
-                <div class="btn-group">
-                    <a href="#contacts" class="btn btn-primary">Записаться на консультацию</a>
-                    <a href="#about" class="btn btn-secondary">Коротко о компетенциях</a>
-                </div>
-            </div>
+            <h1>Помогаю освоить <span>программирование</span></h1>
+            
+            <div class="btn-group">
+            <a href="#contacts" class="btn btn-primary">Записаться на консультацию</a>
+            <a href="#about" class="btn btn-secondary">Коротко о компетенциях</a>
+        </div>
+    </div>
             <div class="hero-image">
-                <img src="src/MyPresentation.png" class="hero-img">
+                <img src="src/MyPresentation.png" class="hero-img" alt="Илья Стальмаков">
             </div>
         </div>
     </section>
 
     <!-- ============================================================ -->
-    <!-- 2) ИНФОРМАЦИЯ О КОМПАНИИ (Опыт / История)                    -->
+    <!-- 3) WHO I AM / КТО Я (About)                                  -->
+    <!-- Картинка слева (зум при наведении, БЕЗ grayscale), текст     -->
+    <!-- справа. Пропорции 1fr : 1.4fr — как у автора портфолио.      -->
     <!-- ============================================================ -->
     <section id="about" class="about-section">
         <div class="container">
 
-            <!-- О преподавателе -->
             <div class="section-header">
-                <h2>О преподавателе</h2>
+                <h2>Кто я</h2>
                 <div class="divider"></div>
+                <p>Немного обо мне и о том, чем я могу быть полезен</p>
             </div>
 
             <div class="about-grid">
-                <div class="about-text">
-                    <p>Привет! Меня зовут Илья Стальмаков. Я прошел путь от младшего аналитика до директора по стратегическому развитию в крупной IT-компании. За плечами — запуск 7 коммерческих продуктов с общим оборотом более 500 млн ₽, обучение 300+ специалистов, которые теперь работают в топовых российских и международных компаниях.</p>
-                    <p>Моя миссия — передать системные знания в области управления, аналитики и переговоров, которые реально работают в бизнесе. Никакой «воды» — только практика, кейсы и инструменты, которые я проверил на себе.</p>
-                    <div class="about-stats">
-                        <div class="stat"><span>12+</span> лет опыта</div>
-                        <div class="stat"><span>300+</span> учеников</div>
-                        <div class="stat"><span>7</span> успешных продуктов</div>
-                    </div>
+
+                <!-- Левая колонка: изображение с hover-зумом -->
+                <div class="about-image-wrapper">
+                    <img src="src/MyPresentation.png" alt="Илья Стальмаков" class="about-img">
                 </div>
-                <div class="about-image">
-                    <!-- Здесь в будущем будет твоя фотография -->
-                    <i class="fas fa-user-tie"></i>
+
+                <!-- Правая колонка: имя, роль, описание, статистика -->
+                <div class="about-content">
+                    <h3 class="about-name">Илья Стальмаков</h3>
+                    <p class="about-role">Преподаватель дисциплин по программированию и наставник в области коммерческого программирования на Unity</p>
+
+                    <p>Привет! Меня зовут Илья Стальмаков. У меня огромный опыт коммерческой разработки, а также большой опыт преподавания в коммерческих образовательных организациях.</p>
+                    <p>Опыт работы в онлайн-школе «Алгоритмика» с марта 2022 года. Я выпустил более 25 групп</p>
+                    <p>Опыт работы в академии IT-TOP с сентября 2025 года.</p>
+                    <p>Коммерческий опыт разработки с 2022 года.</p>
+                    <p>Общий стаж — 4,5 года.</p>
+                    <p>Я демонстрирую все примеры на практике реальных коммерческих проектов и обучаю актуальным и востребованным на рынке навыкам.</p>
+                    <p>Я помог создать индивидуальные проекты с периодами от полугода до года более чем 5 клиентам на фрилансе.</p>
+
+                    <!-- Статистика под текстом -->
+                    <div class="about-stats">
+                        <div class="stat"><span>4.5+</span> лет опыта</div>
+                        <div class="stat"><span>200+</span> учеников</div>
+                        <div class="stat"><span>Более 30-ти успешных выпусков</span> успешных продуктов</div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Ключевые компетенции -->
-            <div class="section-header" style="margin-top: 80px;">
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 4) ОПЫТ / ИСТОРИЯ УСПЕХА (Experience)                        -->
+    <!-- ============================================================ -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+
+            <div class="section-header">
+                <h2>История успеха</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="history-container">
+                <div class="history-item">
+                    <h3><i class="fas fa-graduation-cap"></i> 2010–2014: Становление</h3>
+                    <p>Начало карьеры в инвестиционном банке. За 4 года прошёл путь от стажёра до ведущего аналитика. Участвовал в сделках M&A на сумму более $50 млн.</p>
+                </div>
+                <div class="history-item">
+                    <h3><i class="fas fa-chart-line"></i> 2015–2017: Первые проекты</h3>
+                    <p>Создал с нуля систему бюджетирования и управленческой отчётности. Запустил внутреннюю школу аналитики.</p>
+                </div>
+                <div class="history-item">
+                    <h3><i class="fas fa-chalkboard"></i> 2018–2020: Наставничество</h3>
+                    <p>Разработал методику «Коммерческий экспресс», которая помогла 150+ менеджерам повысить KPI.</p>
+                </div>
+                <div class="history-item">
+                    <h3><i class="fas fa-award"></i> 2021–н.в.: Признание</h3>
+                    <p>Лучший бизнес-тренер года. Ученики работают в X5 Group, Яндекс, Сбер. Открыл онлайн-академию.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 5) КЛЮЧЕВЫЕ КОМПЕТЕНЦИИ (Skills)                             -->
+    <!-- ============================================================ -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+
+            <div class="section-header">
                 <h2>Ключевые компетенции</h2>
                 <div class="divider"></div>
                 <p>Нажмите на любой навык, чтобы увидеть реальные задачи и проекты</p>
@@ -97,63 +153,110 @@
                     <div class="skills-left">
                         <div class="avatar-icon"><i class="fas fa-chart-line"></i></div>
                         <h3>Илья Стальмаков</h3>
-                        <div class="role">Преподаватель коммерческих дисциплин</div>
-                        <div class="bio">Бизнес-практик, наставник, автор курсов по финансовому моделированию и управлению проектами.</div>
+                        <div class="role">Профессиональный преподаватель и IT-наставник</div>
+                        <div class="bio">Обучаю различным направлениям в IT и повышению квалификации на примере реальных коммерческих проектов.</div>
                     </div>
+                    
                     <div class="skills-right">
-                        <div class="skills-header">
-                            <h4>Профессиональные навыки</h4>
-                            <div class="skills-sub">% экспертизы и конкретные результаты</div>
-                        </div>
-                        <div class="skill-item" data-skill-id="project_mgmt">
-                            <div class="skill-info"><span class="skill-name">Управление проектами (Waterfall/Agile)</span><span class="skill-percent">95%</span></div>
-                            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:95%"></div></div>
-                        </div>
-                        <div class="skill-item" data-skill-id="business_analytics">
-                            <div class="skill-info"><span class="skill-name">Бизнес-аналитика и сбор требований</span><span class="skill-percent">90%</span></div>
-                            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:90%"></div></div>
-                        </div>
-                        <div class="skill-item" data-skill-id="negotiations">
-                            <div class="skill-info"><span class="skill-name">Коммерческие переговоры и продажи B2B</span><span class="skill-percent">88%</span></div>
-                            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:88%"></div></div>
-                        </div>
-                        <div class="skill-item" data-skill-id="finance_modeling">
-                            <div class="skill-info"><span class="skill-name">Финансовое моделирование и юнит-экономика</span><span class="skill-percent">92%</span></div>
-                            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:92%"></div></div>
-                        </div>
-                        <div class="skill-item" data-skill-id="strategic_marketing">
-                            <div class="skill-info"><span class="skill-name">Стратегический маркетинг и вывод продуктов</span><span class="skill-percent">85%</span></div>
-                            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:85%"></div></div>
-                        </div>
-                        <div class="skill-item" data-skill-id="leadership">
-                            <div class="skill-info"><span class="skill-name">Лидерство и управление командами</span><span class="skill-percent">90%</span></div>
-                            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:90%"></div></div>
-                        </div>
-                    </div>
+                <div class="skills-header">
+                    <h4>Профессиональные навыки</h4>
+                    <div class="skills-sub">% экспертизы и конкретные результаты</div>
+                    <div class="skills-sub">% Что я могу показать в реальных проектах и помочь улучшить у вас</div>
                 </div>
-            </div>
 
-            <!-- История успеха / Опыт -->
-            <div class="section-header" style="margin-top: 80px;">
-                <h2>История успеха</h2>
-                <div class="divider"></div>
-            </div>
 
-            <div class="history-container">
-                <div class="history-item"><h3><i class="fas fa-graduation-cap"></i> 2010–2014: Становление</h3><p>Начало карьеры в инвестиционном банке. За 4 года прошёл путь от стажёра до ведущего аналитика. Участвовал в сделках M&A на сумму более $50 млн.</p></div>
-                <div class="history-item"><h3><i class="fas fa-chart-line"></i> 2015–2017: Первые проекты</h3><p>Создал с нуля систему бюджетирования и управленческой отчётности. Запустил внутреннюю школу аналитики.</p></div>
-                <div class="history-item"><h3><i class="fas fa-chalkboard"></i> 2018–2020: Наставничество</h3><p>Разработал методику «Коммерческий экспресс», которая помогла 150+ менеджерам повысить KPI.</p></div>
-                <div class="history-item"><h3><i class="fas fa-award"></i> 2021–н.в.: Признание</h3><p>Лучший бизнес-тренер года. Ученики работают в X5 Group, Яндекс, Сбер. Открыл онлайн-академию.</p></div>
+                <!-- C# / .NET -->
+                <div class="skill-item" data-skill-id="csharp_dotnet">
+                    <div class="skill-info"><span class="skill-name">C# / .NET программирование</span><span class="skill-percent">95%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:95%"></div></div>
+                </div>
+
+                <!-- ООП -->
+                <div class="skill-item" data-skill-id="oop">
+                    <div class="skill-info"><span class="skill-name">ООП</span><span class="skill-percent">95%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:95%"></div></div>
+                </div>
+
+
+                <!-- Паттерны проектирования -->
+                <div class="skill-item" data-skill-id="design_patterns">
+                    <div class="skill-info"><span class="skill-name">Паттерны проектирования и шаблоны GRASP</span><span class="skill-percent">90%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:90%"></div></div>
+                </div>
+
+                <!-- SOLID, KISS, архитектура игр -->
+                <div class="skill-item" data-skill-id="solid_game_arch">
+                    <div class="skill-info"><span class="skill-name">Принципы SOLID, KISS и архитектура компьютерных игр</span><span class="skill-percent">82%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:82%"></div></div>
+                </div>
+
+                <!-- Методы анализа данных для ML -->
+                <div class="skill-item" data-skill-id="data_analysis_ml">
+                    <div class="skill-info"><span class="skill-name">Методы анализа данных и дизайн данных для машинного обучения</span><span class="skill-percent">80%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:80%"></div></div>
+                </div>
+
+                <!-- Алгоритмы на графах -->
+                <div class="skill-item" data-skill-id="graph_algorithms">
+                    <div class="skill-info"><span class="skill-name">Алгоритмы на графах с примером реального применения</span><span class="skill-percent">75%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:75%"></div></div>
+                </div>
+
+                <!-- Базы данных + Entity Framework -->
+                <div class="skill-item" data-skill-id="databases_ef">
+                    <div class="skill-info"><span class="skill-name">Базы данных в связке с EntityFramework</span><span class="skill-percent">75%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:75%"></div></div>
+                </div>
+
+                <!-- Git -->
+                <div class="skill-item" data-skill-id="git_vcs">
+                    <div class="skill-info"><span class="skill-name">Git и системы контроля версий</span><span class="skill-percent">75%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:75%"></div></div>
+                </div>
+
+                <!-- Unity плагины -->
+                <div class="skill-item" data-skill-id="unity_plugins">
+                    <div class="skill-info"><span class="skill-name">Работа с DI, Addressables, Firebase и другими плагинами для Unity</span><span class="skill-percent">71%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:71%"></div></div>
+                </div>
+
+                <!-- Клиент-серверная архитектура игр -->
+                <div class="skill-item" data-skill-id="client_server_game">
+                    <div class="skill-info"><span class="skill-name">Клиент-серверная архитектура компьютерных игр на Unity</span><span class="skill-percent">70%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:70%"></div></div>
+                </div>
+
+                <!-- Углублённый C# -->
+                <div class="skill-item" data-skill-id="advanced_csharp">
+                    <div class="skill-info"><span class="skill-name">Углублённый C#: Reflection, Expression Tree, собственный DI-контейнер</span><span class="skill-percent">70%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:70%"></div></div>
+                </div>
+
+                <!-- UI-Toolkit, MVC, MVVM -->
+                <div class="skill-item" data-skill-id="ui_toolkit_mvc">
+                    <div class="skill-info"><span class="skill-name">UI-Toolkit и MVC, MVVM подходы к проектированию больших UI систем</span><span class="skill-percent">65%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:65%"></div></div>
+                </div>
+
+                <!-- C++ -->
+                <div class="skill-item" data-skill-id="cpp">
+                    <div class="skill-info"><span class="skill-name">C++ программирование</span><span class="skill-percent">60%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:60%"></div></div>
+                </div>
+
+            </div>
+                </div>
             </div>
 
         </div>
     </section>
 
     <!-- ============================================================ -->
-    <!-- 3) УСЛУГИ И ЦЕНЫ                                             -->
+    <!-- 6) УСЛУГИ И ЦЕНЫ                                             -->
     <!-- ============================================================ -->
     <section id="services" class="services-section">
         <div class="container">
+
             <div class="section-header">
                 <h2>Услуги и цены</h2>
                 <div class="divider"></div>
@@ -193,14 +296,16 @@
                     <a href="#contacts" class="btn btn-secondary">Обсудить</a>
                 </div>
             </div>
+
         </div>
     </section>
 
     <!-- ============================================================ -->
-    <!-- 4) КЕЙСЫ И ОТЗЫВЫ                                            -->
+    <!-- 7) КЕЙСЫ И ОТЗЫВЫ                                            -->
     <!-- ============================================================ -->
     <section id="cases" class="cases-section">
         <div class="container">
+
             <div class="section-header">
                 <h2>Кейсы учеников</h2>
                 <div class="divider"></div>
@@ -208,9 +313,21 @@
             </div>
 
             <div class="cases-grid">
-                <div class="case-card"><i class="fas fa-chart-simple"></i><h3>Увеличение прибыли на 40%</h3><p>Внедрение юнит-экономики в сети кофеен.</p></div>
-                <div class="case-card"><i class="fas fa-file-signature"></i><h3>Тендер на 120 млн ₽</h3><p>Техники коммерческих переговоров.</p></div>
-                <div class="case-card"><i class="fas fa-rocket"></i><h3>Запуск стартапа</h3><p>Привлёк инвестиции, окупаемость за 8 месяцев.</p></div>
+                <div class="case-card">
+                    <i class="fas fa-chart-simple"></i>
+                    <h3>Увеличение прибыли на 40%</h3>
+                    <p>Внедрение юнит-экономики в сети кофеен.</p>
+                </div>
+                <div class="case-card">
+                    <i class="fas fa-file-signature"></i>
+                    <h3>Тендер на 120 млн ₽</h3>
+                    <p>Техники коммерческих переговоров.</p>
+                </div>
+                <div class="case-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Запуск стартапа</h3>
+                    <p>Привлёк инвестиции, окупаемость за 8 месяцев.</p>
+                </div>
             </div>
 
             <!-- Отзывы -->
@@ -237,13 +354,14 @@
                     <div class="author">— Дмитрий, студент</div>
                 </div>
             </div>
+
         </div>
     </section>
 
 </main>
 
 <!-- ============================================================ -->
-<!-- 5) КОНТАКТНАЯ ИНФОРМАЦИЯ (ПОДВАЛ)                            -->
+<!-- 8) ПОДВАЛ / КОНТАКТЫ                                         -->
 <!-- ============================================================ -->
 <footer id="contacts" class="footer">
     <div class="container">
@@ -284,7 +402,19 @@
 </footer>
 
 <!-- Модальное окно для навыков -->
-<div id="taskModal" class="modal"><div class="modal-content"><div class="modal-header"><h3>Проекты и задачи по навыку</h3><span class="close-modal">&times;</span></div><div class="modal-body"><p><strong>Навык:</strong> <span id="modalSkillName"></span></p><p><strong>Результаты / выполненные задачи:</strong></p><ul id="modalTaskList"></ul></div></div></div>
+<div id="taskModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>Проекты и задачи по навыку</h3>
+            <span class="close-modal">&times;</span>
+        </div>
+        <div class="modal-body">
+            <p><strong>Навык:</strong> <span id="modalSkillName"></span></p>
+            <p><strong>Результаты / выполненные задачи:</strong></p>
+            <ul id="modalTaskList"></ul>
+        </div>
+    </div>
+</div>
 
 <script src="script.js"></script>
 </body>
